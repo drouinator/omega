@@ -1,0 +1,368 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contributing to Omega &mdash; Omega  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="API Reference" href="../api/index.html" />
+    <link rel="prev" title="Getting Started" href="../user_guide/getting_started.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Omega
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/installation.html">Installation Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/installation.html#system-requirements">System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/installation.html#basic-installation">Basic Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/installation.html#advanced-setup">Advanced Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/installation.html#network-configuration">Network Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/installation.html#device-registration">Device Registration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/installation.html#troubleshooting">Troubleshooting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/installation.html#common-issues">Common Issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/installation.html#getting-help">Getting Help</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/getting_started.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/getting_started.html#basic-usage">Basic Usage</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/getting_started.html#directory-structure">Directory Structure</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/getting_started.html#running-your-first-application">Running Your First Application</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/getting_started.html#the-omega-main-dashboard">The Omega Main Dashboard</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/getting_started.html#configuring-camera-feeds">Configuring Camera Feeds</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/getting_started.html#accessing-the-foil-coach-camera">Accessing the Foil Coach Camera</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/getting_started.html#setting-up-baby-monitor">Setting Up Baby Monitor</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/getting_started.html#entertainment-system">Entertainment System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/getting_started.html#starting-retroarch">Starting RetroArch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/getting_started.html#loading-games">Loading Games</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/getting_started.html#controller-configuration">Controller Configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/getting_started.html#next-steps">Next Steps</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Guide</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing to Omega</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#code-of-conduct">Code of Conduct</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#development-setup">Development Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setting-up-your-development-environment">Setting Up Your Development Environment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#coding-standards">Coding Standards</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#code-style-and-formatting">Code Style and Formatting</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#git-workflow">Git Workflow</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#branch-naming-conventions">Branch Naming Conventions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#commit-message-format">Commit Message Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pull-request-process">Pull Request Process</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#testing">Testing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#running-tests">Running Tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#writing-tests">Writing Tests</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#documentation">Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#building-documentation">Building Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#writing-documentation">Writing Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#contact-information">Contact Information</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html#core-modules">Core Modules</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html#ai-components">AI Components</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html#camera-integration">Camera Integration</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html#entertainment-system">Entertainment System</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html#web-dashboard">Web Dashboard</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html#using-the-api">Using the API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../api/index.html#code-examples">Code Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api/index.html#configuring-the-system">Configuring the System</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/index.html#working-with-cameras">Working with Cameras</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/index.html#ai-processing">AI Processing</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api/index.html#api-status-codes">API Status Codes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/index.html#authentication">Authentication</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Omega</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Contributing to Omega</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/dev_guide/contributing.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="contributing-to-omega">
+<h1>Contributing to Omega<a class="headerlink" href="#contributing-to-omega" title="Link to this heading"></a></h1>
+<p>Thank you for your interest in contributing to the Omega project! This guide will help you get started as a contributor.</p>
+<section id="code-of-conduct">
+<h2>Code of Conduct<a class="headerlink" href="#code-of-conduct" title="Link to this heading"></a></h2>
+<p>Everyone participating in the Omega project is expected to treat other people with respect and follow our guidelines:</p>
+<ul class="simple">
+<li><p>Be kind and courteous to others</p></li>
+<li><p>Respect different viewpoints and experiences</p></li>
+<li><p>Give and gracefully accept constructive feedback</p></li>
+<li><p>Focus on what’s best for the community</p></li>
+</ul>
+</section>
+<section id="development-setup">
+<h2>Development Setup<a class="headerlink" href="#development-setup" title="Link to this heading"></a></h2>
+<section id="prerequisites">
+<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Git</p></li>
+<li><p>Python 3.8+</p></li>
+<li><p>Virtual environment tool (venv, conda, etc.)</p></li>
+<li><p>Development tools (specified in requirements-dev.txt)</p></li>
+</ul>
+</section>
+<section id="setting-up-your-development-environment">
+<h3>Setting Up Your Development Environment<a class="headerlink" href="#setting-up-your-development-environment" title="Link to this heading"></a></h3>
+<ol class="arabic">
+<li><p>Fork the repository on GitHub</p></li>
+<li><p>Clone your fork locally:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/YOUR-USERNAME/omega.git
+<span class="nb">cd</span><span class="w"> </span>omega
+</pre></div>
+</div>
+</li>
+<li><p>Set up the development environment:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+<span class="nb">source</span><span class="w"> </span>.venv/bin/activate<span class="w">  </span><span class="c1"># On Windows: .venv\Scripts\activate</span>
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt<span class="w"> </span>-r<span class="w"> </span>requirements-dev.txt
+pre-commit<span class="w"> </span>install
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+</section>
+<section id="coding-standards">
+<h2>Coding Standards<a class="headerlink" href="#coding-standards" title="Link to this heading"></a></h2>
+<p>We follow these standards for code quality:</p>
+<ul class="simple">
+<li><p><strong>Python</strong>: PEP 8 style guide</p></li>
+<li><p><strong>Documentation</strong>: Google-style docstrings</p></li>
+<li><p><strong>Commit Messages</strong>: Conventional Commits specification</p></li>
+<li><p><strong>Testing</strong>: All code should include appropriate tests</p></li>
+</ul>
+<section id="code-style-and-formatting">
+<h3>Code Style and Formatting<a class="headerlink" href="#code-style-and-formatting" title="Link to this heading"></a></h3>
+<p>We use the following tools to maintain code quality:</p>
+<ul class="simple">
+<li><p><strong>Black</strong>: Code formatting</p></li>
+<li><p><strong>isort</strong>: Import sorting</p></li>
+<li><p><strong>flake8</strong>: Style guide enforcement</p></li>
+<li><p><strong>pylint</strong>: Code analysis</p></li>
+<li><p><strong>mypy</strong>: Type checking</p></li>
+</ul>
+<p>These checks run automatically when you commit using pre-commit hooks.</p>
+</section>
+</section>
+<section id="git-workflow">
+<h2>Git Workflow<a class="headerlink" href="#git-workflow" title="Link to this heading"></a></h2>
+<section id="branch-naming-conventions">
+<h3>Branch Naming Conventions<a class="headerlink" href="#branch-naming-conventions" title="Link to this heading"></a></h3>
+<p>Use the following format for branch names:</p>
+<ul class="simple">
+<li><p>Feature: <code class="docutils literal notranslate"><span class="pre">feature/short-description</span></code></p></li>
+<li><p>Bug fix: <code class="docutils literal notranslate"><span class="pre">fix/issue-description</span></code></p></li>
+<li><p>Documentation: <code class="docutils literal notranslate"><span class="pre">docs/what-is-changing</span></code></p></li>
+<li><p>Performance: <code class="docutils literal notranslate"><span class="pre">perf/what-is-improving</span></code></p></li>
+</ul>
+</section>
+<section id="commit-message-format">
+<h3>Commit Message Format<a class="headerlink" href="#commit-message-format" title="Link to this heading"></a></h3>
+<p>Follow the Conventional Commits specification:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&lt;type&gt;[optional scope]: &lt;description&gt;
+
+[optional body]
+
+[optional footer(s)]
+</pre></div>
+</div>
+<p>Examples:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">feat:</span> <span class="pre">add</span> <span class="pre">camera</span> <span class="pre">integration</span> <span class="pre">module</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fix(dashboard):</span> <span class="pre">correct</span> <span class="pre">display</span> <span class="pre">issue</span> <span class="pre">with</span> <span class="pre">camera</span> <span class="pre">feeds</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">docs:</span> <span class="pre">update</span> <span class="pre">installation</span> <span class="pre">instructions</span></code></p></li>
+</ul>
+</section>
+<section id="pull-request-process">
+<h3>Pull Request Process<a class="headerlink" href="#pull-request-process" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Update the documentation to reflect any changes.</p></li>
+<li><p>Ensure your code passes all CI checks.</p></li>
+<li><p>The PR should focus on a single feature or fix.</p></li>
+<li><p>Get at least one code review from a maintainer.</p></li>
+<li><p>Once approved, a maintainer will merge your PR.</p></li>
+</ol>
+</section>
+</section>
+<section id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Link to this heading"></a></h2>
+<section id="running-tests">
+<h3>Running Tests<a class="headerlink" href="#running-tests" title="Link to this heading"></a></h3>
+<p>Run the test suite using pytest:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pytest
+</pre></div>
+</div>
+<p>For coverage information:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>--cov<span class="o">=</span>omega
+</pre></div>
+</div>
+</section>
+<section id="writing-tests">
+<h3>Writing Tests<a class="headerlink" href="#writing-tests" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>All new features should have tests</p></li>
+<li><p>Aim for at least 80% code coverage</p></li>
+<li><p>Include both unit and integration tests when appropriate</p></li>
+</ul>
+</section>
+</section>
+<section id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Link to this heading"></a></h2>
+<section id="building-documentation">
+<h3>Building Documentation<a class="headerlink" href="#building-documentation" title="Link to this heading"></a></h3>
+<p>Build the documentation locally:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>docs
+make<span class="w"> </span>html
+</pre></div>
+</div>
+<p>The generated documentation will be in <code class="docutils literal notranslate"><span class="pre">docs/build/html/</span></code>.</p>
+</section>
+<section id="writing-documentation">
+<h3>Writing Documentation<a class="headerlink" href="#writing-documentation" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Use reStructuredText (RST) format</p></li>
+<li><p>Include code examples where appropriate</p></li>
+<li><p>Keep API documentation up-to-date with code changes</p></li>
+<li><p>Follow our style guide for consistency</p></li>
+</ul>
+</section>
+</section>
+<section id="contact-information">
+<h2>Contact Information<a class="headerlink" href="#contact-information" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>GitHub Issues: <a class="reference external" href="https://github.com/louis-etiennedrouin/omega/issues">https://github.com/louis-etiennedrouin/omega/issues</a></p></li>
+<li><p>Development Chat: <a class="reference external" href="https://discord.gg/omega-dev">https://discord.gg/omega-dev</a></p></li>
+<li><p>Email: <a class="reference external" href="mailto:dev&#37;&#52;&#48;omega-project&#46;org">dev<span>&#64;</span>omega-project<span>&#46;</span>org</a></p></li>
+</ul>
+<p>Thank you for contributing to Omega!</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../user_guide/getting_started.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../api/index.html" class="btn btn-neutral float-right" title="API Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Omega Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

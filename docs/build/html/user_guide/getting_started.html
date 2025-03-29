@@ -1,0 +1,315 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting Started &mdash; Omega  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Contributing to Omega" href="../dev_guide/contributing.html" />
+    <link rel="prev" title="Installation Guide" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Omega
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#system-requirements">System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#basic-installation">Basic Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#advanced-setup">Advanced Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#network-configuration">Network Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#device-registration">Device Registration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#troubleshooting">Troubleshooting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#common-issues">Common Issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#getting-help">Getting Help</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#basic-usage">Basic Usage</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#directory-structure">Directory Structure</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#running-your-first-application">Running Your First Application</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-omega-main-dashboard">The Omega Main Dashboard</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#configuring-camera-feeds">Configuring Camera Feeds</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#accessing-the-foil-coach-camera">Accessing the Foil Coach Camera</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setting-up-baby-monitor">Setting Up Baby Monitor</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#entertainment-system">Entertainment System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#starting-retroarch">Starting RetroArch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loading-games">Loading Games</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#controller-configuration">Controller Configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#next-steps">Next Steps</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev_guide/contributing.html">Contributing to Omega</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/contributing.html#code-of-conduct">Code of Conduct</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/contributing.html#development-setup">Development Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/contributing.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/contributing.html#setting-up-your-development-environment">Setting Up Your Development Environment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/contributing.html#coding-standards">Coding Standards</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/contributing.html#code-style-and-formatting">Code Style and Formatting</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/contributing.html#git-workflow">Git Workflow</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/contributing.html#branch-naming-conventions">Branch Naming Conventions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/contributing.html#commit-message-format">Commit Message Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/contributing.html#pull-request-process">Pull Request Process</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/contributing.html#testing">Testing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/contributing.html#running-tests">Running Tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/contributing.html#writing-tests">Writing Tests</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/contributing.html#documentation">Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/contributing.html#building-documentation">Building Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/contributing.html#writing-documentation">Writing Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/contributing.html#contact-information">Contact Information</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html#core-modules">Core Modules</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html#ai-components">AI Components</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html#camera-integration">Camera Integration</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html#entertainment-system">Entertainment System</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html#web-dashboard">Web Dashboard</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html#using-the-api">Using the API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../api/index.html#code-examples">Code Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api/index.html#configuring-the-system">Configuring the System</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/index.html#working-with-cameras">Working with Cameras</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/index.html#ai-processing">AI Processing</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api/index.html#api-status-codes">API Status Codes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/index.html#authentication">Authentication</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Omega</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Getting Started</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/user_guide/getting_started.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h1>
+<p>This guide will help you get up and running with the Omega project quickly.</p>
+<section id="basic-usage">
+<h2>Basic Usage<a class="headerlink" href="#basic-usage" title="Link to this heading"></a></h2>
+<section id="directory-structure">
+<h3>Directory Structure<a class="headerlink" href="#directory-structure" title="Link to this heading"></a></h3>
+<p>After installation, you’ll find the following directory structure:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Omega/
+├── Code/                  # Source code and scripts
+│   ├── OmegaAI/           # AI components and models
+│   └── Scripts/           # Utility scripts
+├── Cameras/               # Camera feed storage
+│   ├── foil_coach/        # Foil Coach camera feeds
+│   └── baby_monitor/      # Baby monitor feeds
+├── Dashboards/            # Visualization dashboards
+├── Games/                 # Gaming content
+│   ├── ROMs/              # Game ROMs
+│   ├── bios/              # BIOS files for emulators
+│   └── saves/             # Game save data
+└── Archives/              # Data archives
+</pre></div>
+</div>
+</section>
+</section>
+<section id="running-your-first-application">
+<h2>Running Your First Application<a class="headerlink" href="#running-your-first-application" title="Link to this heading"></a></h2>
+<section id="the-omega-main-dashboard">
+<h3>The Omega Main Dashboard<a class="headerlink" href="#the-omega-main-dashboard" title="Link to this heading"></a></h3>
+<p>To launch the main dashboard:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/Omega/Code/omega
+python<span class="w"> </span>dashboard.py
+</pre></div>
+</div>
+<p>This will start the web server on <a class="reference external" href="http://localhost:8080">http://localhost:8080</a>.</p>
+</section>
+</section>
+<section id="configuring-camera-feeds">
+<h2>Configuring Camera Feeds<a class="headerlink" href="#configuring-camera-feeds" title="Link to this heading"></a></h2>
+<section id="accessing-the-foil-coach-camera">
+<h3>Accessing the Foil Coach Camera<a class="headerlink" href="#accessing-the-foil-coach-camera" title="Link to this heading"></a></h3>
+<ol class="arabic">
+<li><p>Connect the camera to your network</p></li>
+<li><p>Configure the camera in the dashboard:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>omega-config<span class="w"> </span>--add-camera<span class="w"> </span>foil<span class="w"> </span>--ip<span class="w"> </span><span class="m">192</span>.168.40.20<span class="w"> </span>--port<span class="w"> </span><span class="m">8080</span>
+</pre></div>
+</div>
+</li>
+<li><p>Access the feed through the dashboard or directly:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>vlc<span class="w"> </span>rtsp://192.168.40.20:8080/live
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="setting-up-baby-monitor">
+<h3>Setting Up Baby Monitor<a class="headerlink" href="#setting-up-baby-monitor" title="Link to this heading"></a></h3>
+<ol class="arabic">
+<li><p>Install the baby monitor app on your mobile device</p></li>
+<li><p>Connect to the same network as your Omega system</p></li>
+<li><p>In the app settings, enable “RTSP Streaming” and note the URL</p></li>
+<li><p>Add the feed to your Omega system:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>omega-config<span class="w"> </span>--add-camera<span class="w"> </span>babymonitor<span class="w"> </span>--url<span class="w"> </span>rtsp://192.168.40.21:8081/live
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+</section>
+<section id="entertainment-system">
+<h2>Entertainment System<a class="headerlink" href="#entertainment-system" title="Link to this heading"></a></h2>
+<section id="starting-retroarch">
+<h3>Starting RetroArch<a class="headerlink" href="#starting-retroarch" title="Link to this heading"></a></h3>
+<p>To launch the RetroArch gaming system:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/Omega/Games
+./launch_retroarch.sh
+</pre></div>
+</div>
+</section>
+<section id="loading-games">
+<h3>Loading Games<a class="headerlink" href="#loading-games" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Navigate to “Load Content” in the RetroArch menu</p></li>
+<li><p>Browse to <cite>~/Omega/Games/ROMs/</cite></p></li>
+<li><p>Select the game you want to play</p></li>
+</ol>
+</section>
+<section id="controller-configuration">
+<h3>Controller Configuration<a class="headerlink" href="#controller-configuration" title="Link to this heading"></a></h3>
+<p>Configure your controller by:</p>
+<ol class="arabic simple">
+<li><p>Going to Settings → Input → Port 1 Controls</p></li>
+<li><p>Select “Autoconfigure” if using a standard controller</p></li>
+<li><p>For manual configuration, map each button as needed</p></li>
+</ol>
+</section>
+</section>
+<section id="next-steps">
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Link to this heading"></a></h2>
+<p>Now that you’re familiar with the basics, consider exploring:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../dev_guide/contributing.html"><span class="doc">Contributing to Omega</span></a> to start developing for Omega</p></li>
+<li><p>Set up automations with the AI components</p></li>
+<li><p>Create custom dashboards for your specific needs</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../dev_guide/contributing.html" class="btn btn-neutral float-right" title="Contributing to Omega" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Omega Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
